@@ -242,8 +242,9 @@
         
         <div class="grupo-input">
             <div class="contenedor-password">
-                <input type="password" id="inputPass2" placeholder="Repetí tu nueva contraseña" required minlength="6">
-                <button type="button" class="btn-ojo" onclick="alternarVisibilidad('inputPass2', this)">Ver</button>
+                <input type="password" id="inputPass2" placeholder="Repetí tu nueva contraseña" required minlength="6"
+				onkeydown="if(event.keyCode === 13){event.preventDefault(); document.getElementById('formRecuperar').requestSubmit();}">
+				<button type="button" class="btn-ojo" onclick="alternarVisibilidad('inputPass2', this)">Ver</button>
             </div>
         </div>
         <button type="submit" id="btnSubmit" class="btn-principal">ACTUALIZAR CONTRASEÑA</button>
