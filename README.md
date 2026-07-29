@@ -1,2 +1,0 @@
-# pauloarzapy.github.io
-ActividadX
